@@ -5,6 +5,7 @@ from .models import Supplier, PaymentMethod
 
 class SupplierAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'supplier_name', 
         'contact_number', 
         'email', 
@@ -12,6 +13,7 @@ class SupplierAdmin(admin.ModelAdmin):
         'payment_method'
     )
     search_fields = (
+        'id',
         'supplier_name', 
         'email', 
         'main_contact'
