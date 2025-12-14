@@ -3,8 +3,8 @@ from .models import Location, SubLocation, Area, SubArea, Storage
 
 class LocationAdmin(admin.ModelAdmin):
     list_display = (
-        'name',
         'id',
+        'name',
     )
     list_filter = () 
     search_fields = ('name',)
@@ -13,6 +13,7 @@ admin.site.register(Location, LocationAdmin)
 
 class SubLocationAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'name',
         'location',
     )
@@ -23,6 +24,7 @@ admin.site.register(SubLocation, SubLocationAdmin)
 
 class AreaAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'name',
         'sub_location',
     )
@@ -33,6 +35,7 @@ admin.site.register(Area, AreaAdmin)
 
 class SubAreaAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'name',
         'area',
     )
