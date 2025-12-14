@@ -26,4 +26,5 @@ class SupplierAdmin(admin.ModelAdmin):
         'supplier_status',
     )
     ordering = ('supplier_name',)
+    
 admin.site.register(Supplier, SupplierAdmin)
