@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Location, SubLocation, Area, SubArea, Storage
+from .models import Location, SubLocation, Area, SubArea
 
 class LocationAdmin(admin.ModelAdmin):
     list_display = (
